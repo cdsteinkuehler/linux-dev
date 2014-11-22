@@ -957,6 +957,11 @@ backports () {
 	${git} "${DIR}/patches/backports/0002-backport-am335x-ti-omap4-rng-from-ti-v3.12-bsp.patch"
 }
 
+probotix () {
+	echo "dir: probotix"
+	${git} "${DIR}/patches/probotix/0001-Add-Probotix-custom-LCD-device-tree-overlay.patch"
+}
+
 xenomai () {
 	echo "dir: xenomai - ipipe"
 	KDIR="$(pwd)"
@@ -1005,6 +1010,7 @@ saucy
 machinekit
 sgx
 backports
+probotix
 xenomai
 
 packaging_setup () {

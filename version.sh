@@ -28,6 +28,7 @@ toolchain="gcc_linaro_gnueabihf_4_7"
 KERNEL_REL=3.8
 KERNEL_TAG=${KERNEL_REL}.13
 BUILD=bone67
+BUILD=${BUILD}-pbx
 
 #v3.X-rcX + upto SHA
 #KERNEL_SHA=""
